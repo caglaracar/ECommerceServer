@@ -1,0 +1,17 @@
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Infrastructure.deps.json
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Infrastructure.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Infrastructure.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Application.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Application.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\bin\Debug\net6.0\ECommerceServer.Domain.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.AssemblyInfo.cs
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerc.5E9FE687.Up2Date
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\refint\ECommerceServer.Infrastructure.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ECommerceServer.Infrastructure.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Infrastructure\obj\Debug\net6.0\ref\ECommerceServer.Infrastructure.dll

@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|c:\\users\\gilfoyle\\desktop\\ecommerceserver\\ecommerceserver\\core\\ecommerceserver.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|solutionrelative:core\\ecommerceserver.domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|c:\\users\\gilfoyle\\desktop\\ecommerceserver\\ecommerceserver\\core\\ecommerceserver.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|solutionrelative:core\\ecommerceserver.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|c:\\users\\gilfoyle\\desktop\\ecommerceserver\\ecommerceserver\\core\\ecommerceserver.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB99C496-B8D7-4253-9395-F82E6DE93ACC}|Core\\ECommerceServer.Domain\\ECommerceServer.Domain.csproj|solutionrelative:core\\ecommerceserver.domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 226,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceServer.Domain\\Entities\\Product.cs",
+              "ToolTip": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Core\\ECommerceServer.Domain\\Entities\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T16:18:21.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceServer.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "Core\\ECommerceServer.Domain\\Entities\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T16:18:19.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "Core\\ECommerceServer.Domain\\Entities\\Customer.cs",
+              "ToolTip": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Core\\ECommerceServer.Domain\\Entities\\Customer.cs",
+              "RelativeToolTip": "Core\\ECommerceServer.Domain\\Entities\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T16:16:56.172Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

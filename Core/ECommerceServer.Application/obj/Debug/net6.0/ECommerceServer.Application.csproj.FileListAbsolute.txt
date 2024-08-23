@@ -1,0 +1,15 @@
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\bin\Debug\net6.0\ECommerceServer.Application.deps.json
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\bin\Debug\net6.0\ECommerceServer.Application.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\bin\Debug\net6.0\ECommerceServer.Application.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\bin\Debug\net6.0\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\bin\Debug\net6.0\ECommerceServer.Domain.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.csproj.AssemblyReference.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.AssemblyInfoInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.AssemblyInfo.cs
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.csproj.CoreCompileInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerc.6ECC9B7B.Up2Date
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\refint\ECommerceServer.Application.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ECommerceServer.Application.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Application\obj\Debug\net6.0\ref\ECommerceServer.Application.dll

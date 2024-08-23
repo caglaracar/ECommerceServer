@@ -1,0 +1,12 @@
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\bin\Debug\net6.0\ECommerceServer.Domain.deps.json
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\bin\Debug\net6.0\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\bin\Debug\net6.0\ECommerceServer.Domain.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.AssemblyInfoInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.AssemblyInfo.cs
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\refint\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.pdb
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ref\ECommerceServer.Domain.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.csproj.AssemblyReference.cache
