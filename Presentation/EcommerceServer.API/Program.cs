@@ -1,5 +1,6 @@
 using ECommerceServer.Application.Validators.Products;
 using ECommerceServer.Domain;
+using ECommerceServer.Infrastructure.Filters;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 
@@ -17,9 +18,10 @@ builder.Services.AddFluentValidationAutoValidation()
 
 builder.Services.AddValidatorsFromAssemblyContaining<CreateProductValidator>();
 
-builder.Services.AddControllers().ConfigureApiBehaviorOptions(options=>options.SuppressModelStateInvalidFilter=true);
+builder.Services.AddControllers(options=>options.Filters.Add<ValidationFilter>())
+    .ConfigureApiBehaviorOptions(options=>options.SuppressModelStateInvalidFilter=true);
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle    
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
