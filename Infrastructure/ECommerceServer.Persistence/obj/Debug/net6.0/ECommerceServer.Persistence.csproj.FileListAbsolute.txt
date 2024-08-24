@@ -17,3 +17,4 @@ C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommer
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Persistence\obj\Debug\net6.0\ref\ECommerceServer.Persistence.dll
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Persistence\bin\Debug\net6.0\ECommerceServer.Persistence.runtimeconfig.json
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Persistence\obj\Debug\net6.0\ECommerceServer.Persistence.genruntimeconfig.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Infrastructure\ECommerceServer.Persistence\obj\Debug\net6.0\ECommerceServer.Persistence.sourcelink.json

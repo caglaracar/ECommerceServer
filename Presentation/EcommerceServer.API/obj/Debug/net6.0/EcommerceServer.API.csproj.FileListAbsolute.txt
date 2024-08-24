@@ -52,3 +52,5 @@ C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\Ecommerce
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\EcommerceServer.API\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\EcommerceServer.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\EcommerceServer.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\EcommerceServer.API\obj\Debug\net6.0\EcommerceServer.API.sourcelink.json
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Presentation\EcommerceServer.API\bin\Debug\net6.0\EcommerceServer.API.staticwebassets.runtime.json

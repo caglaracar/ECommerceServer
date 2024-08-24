@@ -10,3 +10,4 @@ C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.D
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.pdb
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ref\ECommerceServer.Domain.dll
 C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.csproj.AssemblyReference.cache
+C:\Users\Gilfoyle\Desktop\ECommerceServer\ECommerceServer\Core\ECommerceServer.Domain\obj\Debug\net6.0\ECommerceServer.Domain.sourcelink.json

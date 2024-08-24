@@ -23,7 +23,7 @@ namespace ECommerceServer.Application.Validators.Products
                 .WithMessage("Lütfen stok bilgisini 0 ve daha büyük  giriniz");
 
 
-            RuleFor(p => p.price)
+            RuleFor(p => p.Price)
            .NotEmpty()
            .NotNull()
                .WithMessage("Lütfen ürün adını boş girmeyiniz")
