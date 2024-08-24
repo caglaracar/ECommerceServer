@@ -1,0 +1,50 @@
+﻿namespace ECommerceServer.Infrastructure.StaticServices;
+
+public static class NameOperation
+{
+    public static string CharacterRegulatory(string name)
+    {
+        return name
+            .Replace("\\", "")
+            .Replace("/", "")
+            .Replace(":", "")
+            .Replace("*", "")
+            .Replace("?", "")
+            .Replace("\"", "")
+            .Replace("<", "")
+            .Replace(">", "")
+            .Replace("|", "")
+            .Replace(" ", "-")
+            .Replace("ğ", "g")
+            .Replace("Ğ", "G")
+            .Replace("ü", "u")
+            .Replace("Ü", "U")
+            .Replace("ş", "s")
+            .Replace("Ş", "S")
+            .Replace("ı", "i")
+            .Replace("İ", "I")
+            .Replace("ö", "o")
+            .Replace("Ö", "O")
+            .Replace("ç", "c")
+            .Replace("Ç", "C")
+            .Replace("#", "")
+            .Replace("%", "")
+            .Replace("&", "")
+            .Replace("{", "")
+            .Replace("}", "")
+            .Replace("$", "")
+            .Replace("@", "")
+            .Replace("!", "")
+            .Replace("^", "")
+            .Replace("(", "")
+            .Replace(")", "")
+            .Replace("+", "")
+            .Replace("=", "")
+            .Replace("[", "")
+            .Replace("]", "")
+            .Replace(";", "")
+            .Replace(",", "")
+            .Replace("~", "")
+            .Replace("`", "");
+    }
+}
