@@ -4,6 +4,7 @@ using ECommerceServer.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using ECommerceServer.Application.RequestParameters;
+using ECommerceServer.Application.Services;
 
 namespace EcommerceServer.API.Controllers
 {
@@ -12,20 +13,21 @@ namespace EcommerceServer.API.Controllers
     public class ProductsController : ControllerBase
     {
         private readonly IProductWriteRepository _productWriteRepository;
-        private readonly  IProductReadRepository _productReadRepository;
-        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IProductReadRepository _productReadRepository;
+        private readonly IFileService _fileService;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository,IWebHostEnvironment webHostEnvironment)
+        public ProductsController(IProductReadRepository productReadRepository,
+            IProductWriteRepository productWriteRepository, IFileService fileService)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
-            _webHostEnvironment=webHostEnvironment;
+            _fileService = fileService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
+        public async Task<IActionResult> Get([FromQuery] Pagination pagination)
         {
-            var products=_productReadRepository.GetAll(false).Select(p => new
+            var products = _productReadRepository.GetAll(false).Select(p => new
             {
                 p.Id,
                 p.Name,
@@ -33,25 +35,24 @@ namespace EcommerceServer.API.Controllers
                 p.Price,
                 p.CreatedDate,
                 p.UpdatedDate
-            }).Skip(pagination.Page* pagination.Size).Take(pagination.Size);
+            }).Skip(pagination.Page * pagination.Size).Take(pagination.Size);
             return Ok(products);
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
-        { 
+        {
             return Ok(await _productReadRepository.GetByIdAsync(id));
         }
 
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
-            
             await _productWriteRepository.AddAsync(new Product()
             {
-                Name=model.Name,
-                Price=model.Price,
-                Stock=model.Stock,
+                Name = model.Name,
+                Price = model.Price,
+                Stock = model.Stock,
             });
 
             await _productWriteRepository.SaveAsync();
@@ -72,8 +73,7 @@ namespace EcommerceServer.API.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
-
-           bool x= await _productWriteRepository.Remove(id);
+            bool x = await _productWriteRepository.Remove(id);
             await _productWriteRepository.SaveAsync();
             return Ok();
         }
@@ -81,28 +81,8 @@ namespace EcommerceServer.API.Controllers
         [HttpPost("[action]")]
         public async Task<IActionResult> Upload()
         {
-
-            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");
-            Random random = new Random();
-            
-            
-            if (!Directory.Exists(uploadPath))
-            {
-                Directory.CreateDirectory(uploadPath);
-            }
-            
-            foreach (IFormFile file in Request.Form.Files)
-            {
-                string fullPath=Path.Combine(uploadPath, $"{random.NextDouble()}{Path.GetExtension(file.FileName)}");
-                using FileStream fileStream = new FileStream(fullPath, FileMode.Create, FileAccess.Write, FileShare.None,
-                           1024 * 1024, useAsync: false);
-                
-                await file.CopyToAsync(fileStream);
-                await fileStream.FlushAsync();
-            }
-
+            await _fileService.UploadAsync("product-images", Request.Form.Files);
             return Ok();
         }
-
     }
 }
