@@ -1,13 +1,20 @@
-﻿using ECommerceServer.Application.Services;
-using ECommerceServer.Infrastructure.Services;
+﻿using ECommerceServer.Application.Abstractions.Storage;
+using ECommerceServer.Infrastructure.Services.Storage;
+using ECommerceServer.Infrastructure.Services.Storage.Azure;
+using ECommerceServer.Infrastructure.Services.Storage.Local;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ECommerceServer.Infrastructure;
 
 public static class ServiceRegistration
 {
-    public static void AddInfrastructreServices(this IServiceCollection serviceCollection)
+    public static void AddInfrastructureServices(this IServiceCollection serviceCollection)
     {
-        serviceCollection.AddScoped<IFileService, FileService>();
+        serviceCollection.AddScoped<IStorageService, StorageService>();
+    }
+
+    public static void AddStorage<T>(this IServiceCollection serviceCollection) where T : Storage, IStorage
+    {
+        serviceCollection.AddScoped<IStorage, T>();
     }
 }
