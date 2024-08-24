@@ -3,6 +3,7 @@ using ECommerceServer.Application.ViewModels.Products;
 using ECommerceServer.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
+using ECommerceServer.Application.RequestParameters;
 
 namespace EcommerceServer.API.Controllers
 {
@@ -10,19 +11,30 @@ namespace EcommerceServer.API.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        readonly private IProductWriteRepository _productWriteRepository;
-        readonly private IProductReadRepository _productReadRepository;
+        private readonly IProductWriteRepository _productWriteRepository;
+        private readonly  IProductReadRepository _productReadRepository;
+        private readonly IWebHostEnvironment _webHostEnvironment;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository)
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository,IWebHostEnvironment webHostEnvironment)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
+            _webHostEnvironment=webHostEnvironment;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
+        public async Task<IActionResult> Get([FromQuery]Pagination pagination)
         {
-            return Ok(_productReadRepository.GetAll());
+            var products=_productReadRepository.GetAll(false).Select(p => new
+            {
+                p.Id,
+                p.Name,
+                p.Stock,
+                p.Price,
+                p.CreatedDate,
+                p.UpdatedDate
+            }).Skip(pagination.Page* pagination.Size).Take(pagination.Size);
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
@@ -34,19 +46,11 @@ namespace EcommerceServer.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(VM_Create_Product model)
         {
-            if (ModelState.IsValid)
-            {
-                await Console.Out.WriteLineAsync("VALİDE");
-            }
-            else
-            {
-                await Console.Out.WriteLineAsync("Not WALİDE");
-               
-            }
-            await _productWriteRepository.AddAsync(new()
+            
+            await _productWriteRepository.AddAsync(new Product()
             {
                 Name=model.Name,
-                Price=model.price,
+                Price=model.Price,
                 Stock=model.Stock,
             });
 
@@ -71,6 +75,32 @@ namespace EcommerceServer.API.Controllers
 
            bool x= await _productWriteRepository.Remove(id);
             await _productWriteRepository.SaveAsync();
+            return Ok();
+        }
+
+        [HttpPost("[action]")]
+        public async Task<IActionResult> Upload()
+        {
+
+            string uploadPath = Path.Combine(_webHostEnvironment.WebRootPath, "resource/product-images");
+            Random random = new Random();
+            
+            
+            if (!Directory.Exists(uploadPath))
+            {
+                Directory.CreateDirectory(uploadPath);
+            }
+            
+            foreach (IFormFile file in Request.Form.Files)
+            {
+                string fullPath=Path.Combine(uploadPath, $"{random.NextDouble()}{Path.GetExtension(file.FileName)}");
+                using FileStream fileStream = new FileStream(fullPath, FileMode.Create, FileAccess.Write, FileShare.None,
+                           1024 * 1024, useAsync: false);
+                
+                await file.CopyToAsync(fileStream);
+                await fileStream.FlushAsync();
+            }
+
             return Ok();
         }
 

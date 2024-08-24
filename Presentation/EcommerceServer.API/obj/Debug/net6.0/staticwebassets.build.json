@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "5A25tdWzj2RPcrWJMxDcxoZmSwVWgi0S2tg885pbkW8=",
+  "Hash": "x2o/KepZJ5eM7U2CT/X2+qyqZ27x2IhOoJ+m6+5vcxM=",
   "Source": "EcommerceServer.API",
   "BasePath": "_content/EcommerceServer.API",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "EcommerceServer.API\\wwwroot",
+      "Source": "EcommerceServer.API",
+      "ContentRoot": "C:\\Users\\Gilfoyle\\Desktop\\ECommerceServer\\ECommerceServer\\Presentation\\EcommerceServer.API\\wwwroot\\",
+      "BasePath": "_content/EcommerceServer.API",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }
