@@ -1,4 +1,6 @@
-﻿using ECommerceServer.Application.Abstractions.Storage.Azure;
+﻿using Azure.Storage.Blobs;
+using Azure.Storage.Blobs.Models;
+using ECommerceServer.Application.Abstractions.Storage.Azure;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 
@@ -8,8 +10,9 @@ namespace ECommerceServer.Infrastructure.Services.Storage.Azure;
     {
         readonly BlobServiceClient _blobServiceClient;
         BlobContainerClient _blobContainerClient;
-        public AzureStorage(IConfiguration configuration)
+        public AzureStorage(IConfiguration configuration, BlobContainerClient blobContainerClient)
         {
+            _blobContainerClient = blobContainerClient;
             _blobServiceClient = new(configuration["Storage:Azure"]);
         }
         public async Task DeleteAsync(string containerName, string fileName)
